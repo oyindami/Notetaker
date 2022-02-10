@@ -16,7 +16,7 @@ function write(note) {
 function read() {
   return readNotes("db/db.json", "utf8");
 }
-
+// getting the npotes and 
 function getNotes() {
   return this.read().then((notes) => {
     let parsedNotes;
