@@ -1,11 +1,11 @@
 const router = require("express").Router();
 
-const controllers = require("../controllers");
+const controllers = require("../newcontroller");
 
 // GET request
 router.get("/notes", function (req, res) {
   controllers
-    .retrieveNotes()
+    .getNotes()
     .then((notes) => res.json(notes))
     .catch((err) => res.status(500).json(err));
 });
@@ -13,7 +13,7 @@ router.get("/notes", function (req, res) {
 // POST request
 router.post("/notes", (req, res) => {
   controllers
-    .addNote(req.body)
+    .addNotes(req.body)
     .then((note) => res.json(note))
     .catch((err) => res.status(500).json(err));
 });
@@ -21,7 +21,7 @@ router.post("/notes", (req, res) => {
 // Bonus - DELETE request
 router.delete("/notes/:id", function (req, res) {
   controllers
-    .deleteNote(req.params.id)
+    .deleteNotes(req.params.id)
     .then(() => res.json({ ok: true }))
     .catch((err) => res.status(500).json(err));
 });
