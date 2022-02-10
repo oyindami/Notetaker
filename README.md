@@ -31,6 +31,11 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 This is app is a note taker app that stores infomration when a user enters in and is able to delete with the helpw of a delete icon
 
+
+## Application
+
+![image](./Assets/notetaker.PNG)
+
 ##Links
 [walkthroughvideo](https://watch.screencastify.com/v/14asz8ARQObXi0RiE6F3)
 [Deployed-site] (https://powerful-spire-31893.herokuapp.com/)
