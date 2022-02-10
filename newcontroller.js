@@ -11,6 +11,7 @@ const writeNote = util.promisify(fs.writeFile);
 function write(note) {
   return writeNote("db/db.json", JSON.stringify(note));
 }
+//where the input will be written to in the database//
 
 function read() {
   return readNotes("db/db.json", "utf8");
